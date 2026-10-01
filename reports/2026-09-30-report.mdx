@@ -1,0 +1,811 @@
+---
+title: "Stegosaurus September 2026"
+date: 2026-09-30
+slug: /2026/09
+tags: [monthly-report, project-activity]
+---
+
+import GitHubProfileCard from '@site/src/components/GitHubProfileCard';
+
+
+# Summary
+
+| | |
+|--------|-------|
+| **Total Items** | 373 (60 planned, 313 opportunistic) |
+| **Automation** | 39.7% (246 bot PRs out of 619 total PRs) |
+| **Contributors** | 25 total, 21 new |
+
+
+## Desktop
+
+![area/gnome](https://img.shields.io/badge/area%2Fgnome-28A745?style=flat-square) ![area/aurora](https://img.shields.io/badge/area%2Faurora-1D76DB?style=flat-square) ![area/bling](https://img.shields.io/badge/area%2Fbling-F9C74F?style=flat-square)
+
+*GNOME desktop environment, Aurora variant (KDE), and terminal enhancements*
+
+> Status: _ChillOps_
+
+---
+
+## Development
+
+![area/dx](https://img.shields.io/badge/area%2Fdx-17A2B8?style=flat-square)
+
+*Development tools and IDE integrations*
+
+> Status: _ChillOps_
+
+### Homebrew
+
+#### Promotions
+
+The following packages graduated from experimental-tap to production-tap this month, ready for wider use:
+
+- **chairlift** - System management tool for bootc-based installations ([#635](https://github.com/ublue-os/homebrew-tap/pull/635), Sep 9)
+
+Use `ujust bbrew` to browse and install these packages. Follow [the tap instructions](https://github.com/ublue-os/homebrew-tap) if you want to do it by hand.
+
+#### Package Updates
+
+![Production Tap](https://img.shields.io/badge/production--tap-55%20updates-blue?style=flat-square) ![Experimental Tap](https://img.shields.io/badge/experimental--tap-86%20updates-orange?style=flat-square)
+
+**141 automated updates** this month via GitHub Actions. Homebrew tap version bumps ensure Bluefin users always have access to the latest stable releases.
+
+##### Quick Summary
+
+| Tap | Updates |
+|-----|---------|
+| production-tap | 55 |
+| experimental-tap | 86 |
+
+<details>
+<summary>View all production-tap updates (55)</summary>
+
+| Package | Versions | PR |
+|---------|----------|-----|
+| antigravity-cli-linux | 1.2.13 → 1.1.27 (16 updates) | [#707](https://github.com/ublue-os/homebrew-tap/pull/707) |
+| antigravity-linux | 2.18.1 → 2.13.0 (7 updates) | [#708](https://github.com/ublue-os/homebrew-tap/pull/708) |
+| visual-studio-code-linux | 1.139.1 → 1.136.2 (5 updates) | [#701](https://github.com/ublue-os/homebrew-tap/pull/701) |
+| goose-linux | 1.52.0 → 1.50.0 (4 updates) | [#691](https://github.com/ublue-os/homebrew-tap/pull/691) |
+| zed-linux | 1.21.0 → 1.19.2 (4 updates) | [#695](https://github.com/ublue-os/homebrew-tap/pull/695) |
+| lm-studio-linux | 0.4.25 → 0.4.24 (2 updates) | [#684](https://github.com/ublue-os/homebrew-tap/pull/684) |
+| jetbrains-toolbox-linux | 3.8.1.88030 → 3.8.0.87909 (2 updates) | [#676](https://github.com/ublue-os/homebrew-tap/pull/676) |
+| framework-tool | 0.6.6 | [#690](https://github.com/ublue-os/homebrew-tap/pull/690) |
+| 1password-gui-linux | 8.12.36 | [#646](https://github.com/ublue-os/homebrew-tap/pull/646) |
+| vscodium-linux | 1.135.06055 | [#645](https://github.com/ublue-os/homebrew-tap/pull/645) |
+| linux-mcp-server | 1.6.0 | [#630](https://github.com/ublue-os/homebrew-tap/pull/630) |
+
+</details>
+
+<details>
+<summary>View all experimental-tap updates (86)</summary>
+
+| Package | Versions | PR |
+|---------|----------|-----|
+| chatgpt-linux | 26.928.20755 → 26.903.61454 (12 updates) | [#729](https://github.com/ublue-os/homebrew-experimental-tap/pull/729) |
+| kiro-cli-linux | 2.26.0 → 2.21.2 (11 updates) | [#731](https://github.com/ublue-os/homebrew-experimental-tap/pull/731) |
+| cursor-linux | 3.22.12 → 3.19.19 (11 updates) | [#726](https://github.com/ublue-os/homebrew-experimental-tap/pull/726) |
+| claude-desktop-linux | 2.9939.4 → 1.49585.0 (9 updates) | [#725](https://github.com/ublue-os/homebrew-experimental-tap/pull/725) |
+| windsurf-linux | 3.10.48 → 3.10.23 (5 updates) | [#733](https://github.com/ublue-os/homebrew-experimental-tap/pull/733) |
+| opencode-desktop-linux | 2.0.20 → 1.18.30 (4 updates) | [#732](https://github.com/ublue-os/homebrew-experimental-tap/pull/732) |
+| emdash-linux | 1.2.7 → 1.2.4 (4 updates) | [#723](https://github.com/ublue-os/homebrew-experimental-tap/pull/723) |
+| craft-agents-linux | 0.13.6 → 0.13.3 (4 updates) | [#722](https://github.com/ublue-os/homebrew-experimental-tap/pull/722) |
+| tableplus-linux | 0.1.316 → 0.1.312 (3 updates) | [#711](https://github.com/ublue-os/homebrew-experimental-tap/pull/711) |
+| rider-linux | 2026.2.3 → 2026.2.2 (2 updates) | [#728](https://github.com/ublue-os/homebrew-experimental-tap/pull/728) |
+| proton-pass-linux | 1.41.1 → 1.40.2 (2 updates) | [#716](https://github.com/ublue-os/homebrew-experimental-tap/pull/716) |
+| pycharm-linux | 2026.2.3 → 2026.2.2 (2 updates) | [#693](https://github.com/ublue-os/homebrew-experimental-tap/pull/693) |
+| rustrover-linux | 2026.2.3 → 2026.2.2 (2 updates) | [#685](https://github.com/ublue-os/homebrew-experimental-tap/pull/685) |
+| datagrip-linux | 2026.2.6 | [#730](https://github.com/ublue-os/homebrew-experimental-tap/pull/730) |
+| clion-linux | 2026.2.3 | [#704](https://github.com/ublue-os/homebrew-experimental-tap/pull/704) |
+| proton-mail-bridge-linux | 3.27.0 | [#700](https://github.com/ublue-os/homebrew-experimental-tap/pull/700) |
+| rubymine-linux | 2026.2.3 | [#694](https://github.com/ublue-os/homebrew-experimental-tap/pull/694) |
+| phpstorm-linux | 2026.2.3 | [#684](https://github.com/ublue-os/homebrew-experimental-tap/pull/684) |
+| webstorm-linux | 2026.2.3 | [#686](https://github.com/ublue-os/homebrew-experimental-tap/pull/686) |
+| goland-linux | 2026.2.3 | [#674](https://github.com/ublue-os/homebrew-experimental-tap/pull/674) |
+| gitkraken-linux | 12.5.0 | [#672](https://github.com/ublue-os/homebrew-experimental-tap/pull/672) |
+| intellij-idea-linux | 2026.2.3 | [#675](https://github.com/ublue-os/homebrew-experimental-tap/pull/675) |
+| dockerd-linux | 29.8.1 | [#671](https://github.com/ublue-os/homebrew-experimental-tap/pull/671) |
+| localwp-linux | 10.1.2 | [#658](https://github.com/ublue-os/homebrew-experimental-tap/pull/658) |
+
+</details>
+
+---
+
+## Ecosystem
+
+![area/brew](https://img.shields.io/badge/area%2Fbrew-E8590C?style=flat-square) ![area/bluespeed](https://img.shields.io/badge/area%2Fbluespeed-1D76DB?style=flat-square) ![area/flatpak](https://img.shields.io/badge/area%2Fflatpak-9333EA?style=flat-square)
+
+*Homebrew packages, AI/ML tools (Bluespeed), and Flatpak applications*
+
+> Status: _ChillOps_
+
+---
+
+## System Services & Policies
+
+![area/services](https://img.shields.io/badge/area%2Fservices-4A90E2?style=flat-square) ![area/policy](https://img.shields.io/badge/area%2Fpolicy-5B8BC1?style=flat-square)
+
+*Systemd services and system-level policies*
+
+> Status: _ChillOps_
+
+---
+
+## Hardware
+
+![area/hardware](https://img.shields.io/badge/area%2Fhardware-F59E0B?style=flat-square) ![area/nvidia](https://img.shields.io/badge/area%2Fnvidia-76B900?style=flat-square) ![aarch64](https://img.shields.io/badge/aarch64-F59E0B?style=flat-square)
+
+*Hardware support, drivers, NVIDIA GPU, and ARM64 architecture*
+
+> Status: _ChillOps_
+
+---
+
+## Infrastructure
+
+![area/iso](https://img.shields.io/badge/area%2Fiso-A0522D?style=flat-square) ![area/upstream](https://img.shields.io/badge/area%2Fupstream-5CB85C?style=flat-square) ![area/buildstream](https://img.shields.io/badge/area%2Fbuildstream-0066FF?style=flat-square) ![area/finpilot](https://img.shields.io/badge/area%2Ffinpilot-7C3AED?style=flat-square) ![area/just](https://img.shields.io/badge/area%2Fjust-E99695?style=flat-square) ![area/testing](https://img.shields.io/badge/area%2Ftesting-F59E0B?style=flat-square)
+
+*ISO images, upstream integration, build systems, and testing frameworks*
+
+#### Planned Work
+
+> Status: _ChillOps_
+
+#### Opportunistic Work
+
+- fix: update ZFS userspace lib globs for OpenZFS 2.4.3 soname bump by [@​castrojo](https://github.com/castrojo) in [#1781](https://github.com/ublue-os/bluefin-lts/pull/1781)
+
+---
+
+## Documentation
+
+![kind/documentation](https://img.shields.io/badge/kind%2Fdocumentation-0066FF?style=flat-square)
+
+*Documentation improvements and additions*
+
+> Status: _ChillOps_
+
+---
+
+## Tech Debt
+
+![kind/tech-debt](https://img.shields.io/badge/kind%2Ftech-debt-D4A259?style=flat-square) ![kind/parity](https://img.shields.io/badge/kind%2Fparity-9333EA?style=flat-square)
+
+*Maintenance work and feature parity between variants*
+
+> Status: _ChillOps_
+
+---
+
+## Automation
+
+![kind/automation](https://img.shields.io/badge/kind%2Fautomation-5B8BC1?style=flat-square) ![kind/github-action](https://img.shields.io/badge/kind%2Fgithub-action-2088FF?style=flat-square) ![kind/renovate](https://img.shields.io/badge/kind%2Frenovate-3B82F6?style=flat-square)
+
+*CI/CD pipelines, GitHub Actions, and automated dependency updates*
+
+> Status: _ChillOps_
+
+---
+
+## Localization
+
+![kind/translation](https://img.shields.io/badge/kind%2Ftranslation-8B5CF6?style=flat-square)
+
+*Translation and internationalization work*
+
+> Status: _ChillOps_
+
+---
+
+## Other
+
+- chore(deps): update projectbluefin/actions digest to 0debf71 by [@​mergeraptor](https://github.com/mergeraptor) in [#1276](https://github.com/projectbluefin/common/pull/1276)
+- docs(secrets-policy): record Cloudflare secrets as provisioned by [@​clubanderson](https://github.com/clubanderson) in [#1275](https://github.com/projectbluefin/common/pull/1275)
+- feat(wallpaper): ship original looping movie for Hidamari by [@​mendezr](https://github.com/mendezr) in [#1207](https://github.com/projectbluefin/common/pull/1207)
+- refactor: remove produced-but-unconsumed nvidia overlay by [@​mendezr](https://github.com/mendezr) in [#1263](https://github.com/projectbluefin/common/pull/1263)
+- docs(ci-tooling): record Renovate fork processing for the printer forks by [@​sramkrishna](https://github.com/sramkrishna) in [#1259](https://github.com/projectbluefin/common/pull/1259)
+- docs(release-promotion): record printer testing-to-stable promotion proof by [@​kylerankin](https://github.com/kylerankin) in [#1257](https://github.com/projectbluefin/common/pull/1257)
+- feat(brew): update opencode to the v2 formula by [@​kronikpillow](https://github.com/kronikpillow) in [#1270](https://github.com/projectbluefin/common/pull/1270)
+- fix(ci): report required checks on docs-only PRs by [@​Danathar](https://github.com/Danathar) in [#1181](https://github.com/projectbluefin/common/pull/1181)
+- docs(ci-pitfalls): correct create-github-app-token owner/repositories scoping by [@​castrojo](https://github.com/castrojo) in [#1269](https://github.com/projectbluefin/common/pull/1269)
+- fix(chairlift): refresh vendored desktop entry and icons to v26.09.0-alpha.2 by [@​clubanderson](https://github.com/clubanderson) in [#1274](https://github.com/projectbluefin/common/pull/1274)
+- fix(ci): retry transient GHCR errors in check-oci-refs.py by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1122](https://github.com/projectbluefin/common/pull/1122)
+- docs(chairlift): fix broken brew-lifecycle doc reference in config.yml by [@​buggtb](https://github.com/buggtb) in [#1273](https://github.com/projectbluefin/common/pull/1273)
+- fix: align ChairLift config and ship GSettings schemas by [@​mendezr](https://github.com/mendezr) in [#1265](https://github.com/projectbluefin/common/pull/1265)
+- fix(nvidia): pin suspend notifiers so sleep is not vetoed by [@​mendezr](https://github.com/mendezr) in [#1176](https://github.com/projectbluefin/common/pull/1176)
+- chore(deps): update projectbluefin/actions digest to f862ab6 by [@​mergeraptor](https://github.com/mergeraptor) in [#1256](https://github.com/projectbluefin/common/pull/1256)
+- fix(brew): comment out kcl, use upstream kpt, remove aurora-wp by [@​KiKaraage](https://github.com/KiKaraage) in [#1131](https://github.com/projectbluefin/common/pull/1131)
+- feat(wallpaper): add Damask first-run setup hook and non-destructive defaults by [@​repires](https://github.com/repires) in [#1186](https://github.com/projectbluefin/common/pull/1186)
+- fix: reconcile inert .github Renovate configuration by [@​repires](https://github.com/repires) in [#1183](https://github.com/projectbluefin/common/pull/1183)
+- feat(damask): ship flatpak overrides and background systemd service by [@​repires](https://github.com/repires) in [#1187](https://github.com/projectbluefin/common/pull/1187)
+- feat(chairlift): add wallpaper slideshow and video wallpaper brew bundles by [@​sramkrishna](https://github.com/sramkrishna) in [#1185](https://github.com/projectbluefin/common/pull/1185)
+- ci: run all maintained unit suites in CI by [@​arteeh](https://github.com/arteeh) in [#1249](https://github.com/projectbluefin/common/pull/1249)
+- feat(testing): add a hardware-free eSCL scanner fixture by [@​sramkrishna](https://github.com/sramkrishna) in [#1225](https://github.com/projectbluefin/common/pull/1225)
+- docs(contributing): add per-repo reviewer coverage map with refresh procedure by [@​mendezr](https://github.com/mendezr) in [#1248](https://github.com/projectbluefin/common/pull/1248)
+- docs: inventory printer and scanner driver projects by [@​arteeh](https://github.com/arteeh) in [#1221](https://github.com/projectbluefin/common/pull/1221)
+- docs: record printer application upstream source baseline by [@​buggtb](https://github.com/buggtb) in [#1251](https://github.com/projectbluefin/common/pull/1251)
+- docs(skills): track PAPPL scanning API upstream status and ownership boundary by [@​buggtb](https://github.com/buggtb) in [#1218](https://github.com/projectbluefin/common/pull/1218)
+- docs(printer-apps): add release-contract evidence matrix by [@​buggtb](https://github.com/buggtb) in [#1222](https://github.com/projectbluefin/common/pull/1222)
+- docs(ci-tooling): correct stale claim about dockerfile manager and COPY --from by [@​buggtb](https://github.com/buggtb) in [#1255](https://github.com/projectbluefin/common/pull/1255)
+- docs(skills): correct renovate versioned-binary tracking wording by [@​mendezr](https://github.com/mendezr) in [#1250](https://github.com/projectbluefin/common/pull/1250)
+- docs: assess native HP PCL app against HPLIP OCI coverage by [@​buggtb](https://github.com/buggtb) in [#1236](https://github.com/projectbluefin/common/pull/1236)
+- docs: evaluate LPrint v1.4.0 as FSDK OCI label-printer appliance by [@​kylerankin](https://github.com/kylerankin) in [#1235](https://github.com/projectbluefin/common/pull/1235)
+- docs: correct reusable lifecycle automation ownership (bonedigger, not actions) by [@​buggtb](https://github.com/buggtb) in [#1227](https://github.com/projectbluefin/common/pull/1227)
+- docs(scanner): evaluate scanApp POC and pappl-retrofit scanning feasibility by [@​buggtb](https://github.com/buggtb) in [#1220](https://github.com/projectbluefin/common/pull/1220)
+- docs: evaluate legacy SANE scanning appliance without claiming driverless parity by [@​buggtb](https://github.com/buggtb) in [#1219](https://github.com/projectbluefin/common/pull/1219)
+- docs(contributing): add self-collision preflight draft for intra-lane duplicate PRs by [@​sramkrishna](https://github.com/sramkrishna) in [#1201](https://github.com/projectbluefin/common/pull/1201)
+- fix(audio): make Bluetooth auto-switch opt-in instead of default by [@​mendezr](https://github.com/mendezr) in [#1179](https://github.com/projectbluefin/common/pull/1179)
+- feat(brew): remove RamaLama from Bluefin AI tools bundle by [@​kylerankin](https://github.com/kylerankin) in [#1204](https://github.com/projectbluefin/common/pull/1204)
+- fix: honor NO_COLOR in local override output by [@​Danathar](https://github.com/Danathar) in [#1190](https://github.com/projectbluefin/common/pull/1190)
+- fix: require review for GitHub Actions minor/patch updates by [@​Danathar](https://github.com/Danathar) in [#1146](https://github.com/projectbluefin/common/pull/1146)
+- fix: polkit org.ublue.privileged.user.setup defaults no/no/auth_admin — system_files/shared/usr/share/polkit-1/actions/org.ublue.privileged.user.setup.policy by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1108](https://github.com/projectbluefin/common/pull/1108)
+- chore(deps): update projectbluefin/actions digest to 38cebd9 by [@​mergeraptor](https://github.com/mergeraptor) in [#1237](https://github.com/projectbluefin/common/pull/1237)
+- chore(deps): update homebrew/actions digest to e99025e by [@​mergeraptor](https://github.com/mergeraptor) in [#1238](https://github.com/projectbluefin/common/pull/1238)
+- ci: run the suite-registration drift gate on every PR by [@​kylerankin](https://github.com/kylerankin) in [#1192](https://github.com/projectbluefin/common/pull/1192)
+- feat: WSL/container machine equivalent developer environment via Lima by [@​repires](https://github.com/repires) in [#1175](https://github.com/projectbluefin/common/pull/1175)
+- fix(systemd): remove local-fs ordering cycle in rechunker-group-fix by [@​kylerankin](https://github.com/kylerankin) in [#1208](https://github.com/projectbluefin/common/pull/1208)
+- feat(countme): add dakota-scoped client and systemd units by [@​castrojo](https://github.com/castrojo) in [#1154](https://github.com/projectbluefin/common/pull/1154)
+- feat(bazaar): Sept 2026 curation update, 7 new recs by [@​KiKaraage](https://github.com/KiKaraage) in [#1173](https://github.com/projectbluefin/common/pull/1173)
+- chore(deps): update github/codeql-action digest to 2892aa5 by [@​mergeraptor](https://github.com/mergeraptor) in [#1202](https://github.com/projectbluefin/common/pull/1202)
+- fix: empty hooks directory made setup services exit 127 by [@​kylerankin](https://github.com/kylerankin) in [#1193](https://github.com/projectbluefin/common/pull/1193)
+- chore(deps): update projectbluefin/actions digest to 4441ece by [@​mergeraptor](https://github.com/mergeraptor) in [#1172](https://github.com/projectbluefin/common/pull/1172)
+- ci: block unpinned git checkouts in Containerfile builder stages by [@​mendezr](https://github.com/mendezr) in [#1178](https://github.com/projectbluefin/common/pull/1178)
+- feat: Super+E should open a new Nautilus window on every press by [@​repires](https://github.com/repires) in [#1184](https://github.com/projectbluefin/common/pull/1184)
+- chore: update motd + config by [@​theMimolet](https://github.com/theMimolet) in [#1077](https://github.com/projectbluefin/common/pull/1077)
+- fix(brew): drop tremor-runtime, removed from Homebrew by [@​castrojo](https://github.com/castrojo) in [#1206](https://github.com/projectbluefin/common/pull/1206)
+- fix(countme): retry Dakota once per UTC week by [@​castrojo](https://github.com/castrojo) in [#1203](https://github.com/projectbluefin/common/pull/1203)
+- fix(chairlift): track rebranded projectbluefin/chairlift release by [@​eltorrero](https://github.com/eltorrero) in [#1121](https://github.com/projectbluefin/common/pull/1121)
+- fix(apps): pin and sha256-verify OpenTabletDriver install fetches by [@​mendezr](https://github.com/mendezr) in [#1198](https://github.com/projectbluefin/common/pull/1198)
+- docs(contributing): add agent-lane-throttle.md — demand-side throttle for the hold-gate queue by [@​sramkrishna](https://github.com/sramkrishna) in [#1197](https://github.com/projectbluefin/common/pull/1197)
+- docs(contributing): add triage-sla.md — 14-day first-response SLA proposal for human-authored issues by [@​mendezr](https://github.com/mendezr) in [#1195](https://github.com/projectbluefin/common/pull/1195)
+- docs(skills): record image-identity ownership decision — docs/skills/image-identity.md by [@​sramkrishna](https://github.com/sramkrishna) in [#1191](https://github.com/projectbluefin/common/pull/1191)
+- fix(ci): use coreutils instead of uutils in the manifest job by [@​juanresendiz813](https://github.com/juanresendiz813) in [#1936](https://github.com/ublue-os/bluefin-lts/pull/1936)
+- feat: replace Docker Model Runner with llmman by [@​ericcurtin](https://github.com/ericcurtin) in [#1840](https://github.com/ublue-os/bluefin-lts/pull/1840)
+- feat(chairlift): update to 26.09.0-alpha.4 by [@​castrojo](https://github.com/castrojo) in [#704](https://github.com/ublue-os/homebrew-tap/pull/704)
+- fix(chairlift): detect published alpha releases by [@​ahmedadan](https://github.com/ahmedadan) in [#703](https://github.com/ublue-os/homebrew-tap/pull/703)
+- fix(chairlift): detect published alpha releases by [@​ahmedadan](https://github.com/ahmedadan) in [#702](https://github.com/ublue-os/homebrew-tap/pull/702)
+- fix: remove leftover chairlift-flower.svg by [@​KiKaraage](https://github.com/KiKaraage) in [#699](https://github.com/ublue-os/homebrew-tap/pull/699)
+- chore(chairlift): update to 26.09.0-alpha.1 by [@​mendezr](https://github.com/mendezr) in [#696](https://github.com/ublue-os/homebrew-tap/pull/696)
+- docs: add trust for tap by [@​renner0e](https://github.com/renner0e) in [#681](https://github.com/ublue-os/homebrew-tap/pull/681)
+- follow homebrew actions releases not main by [@​inffy](https://github.com/inffy) in [#674](https://github.com/ublue-os/homebrew-tap/pull/674)
+- fix agi-linux by [@​inffy](https://github.com/inffy) in [#670](https://github.com/ublue-os/homebrew-tap/pull/670)
+- fix: bluefin review style check failure by [@​ahmedadan](https://github.com/ahmedadan) in [#662](https://github.com/ublue-os/homebrew-tap/pull/662)
+- fix(asusctl): make uninstalling asusctl cask not spit out errors by [@​inffy](https://github.com/inffy) in [#660](https://github.com/ublue-os/homebrew-tap/pull/660)
+- fix(rog-control-center): ensure base directories and shell nested icon paths by [@​nileshchakraborty](https://github.com/nileshchakraborty) in [#655](https://github.com/ublue-os/homebrew-tap/pull/655)
+- chore: remove aurora-wallpapers from brew tap by [@​inffy](https://github.com/inffy) in [#656](https://github.com/ublue-os/homebrew-tap/pull/656)
+- fix(asusctl-linux): avoid symlink canonicalization for SELinux semanage path by [@​nileshchakraborty](https://github.com/nileshchakraborty) in [#654](https://github.com/ublue-os/homebrew-tap/pull/654)
+- fix: handle 1Password desktop rename and replay by [@​ahmedadan](https://github.com/ahmedadan) in [#650](https://github.com/ublue-os/homebrew-tap/pull/650)
+- fix(chairlift): use Project Bluefin releases by [@​ahmedadan](https://github.com/ahmedadan) in [#636](https://github.com/ublue-os/homebrew-tap/pull/636)
+- fix(chairlift): import cask with reliable Linux setup by [@​ahmedadan](https://github.com/ahmedadan) in [#635](https://github.com/ublue-os/homebrew-tap/pull/635)
+- fix(vscode): pin stable cask download URL to the build commit by [@​ahmedadan](https://github.com/ahmedadan) in [#632](https://github.com/ublue-os/homebrew-tap/pull/632)
+- fix: prevent cask sandbox installation failures by [@​ahmedadan](https://github.com/ahmedadan) in [#629](https://github.com/ublue-os/homebrew-tap/pull/629)
+- fix: restore tap CI on current Homebrew by [@​ahmedadan](https://github.com/ahmedadan) in [#627](https://github.com/ublue-os/homebrew-tap/pull/627)
+- fix: agi-cli deprecated methods by [@​inffy](https://github.com/inffy) in [#626](https://github.com/ublue-os/homebrew-tap/pull/626)
+- fix(goose: drop deprecated methods by [@​inffy](https://github.com/inffy) in [#625](https://github.com/ublue-os/homebrew-tap/pull/625)
+- fix(goose: drop deprecated methods by [@​inffy](https://github.com/inffy) in [#624](https://github.com/ublue-os/homebrew-tap/pull/624)
+- fix: antigravity-ide casks deprecated methods by [@​inffy](https://github.com/inffy) in [#623](https://github.com/ublue-os/homebrew-tap/pull/623)
+- Bottle workflow: match numbered bottle tarballs by [@​hanthor](https://github.com/hanthor) in [#721](https://github.com/ublue-os/homebrew-experimental-tap/pull/721)
+- Add compass bottle build (both Linux arches) by [@​hanthor](https://github.com/hanthor) in [#720](https://github.com/ublue-os/homebrew-experimental-tap/pull/720)
+- fix(opencode-desktop-linux): track 2.x, which is not on GitHub releases by [@​kronikpillow](https://github.com/kronikpillow) in [#718](https://github.com/ublue-os/homebrew-experimental-tap/pull/718)
+- Add Compass launcher formula by [@​hanthor](https://github.com/hanthor) in [#719](https://github.com/ublue-os/homebrew-experimental-tap/pull/719)
+- fix(casks): resolve Landlock sandbox EISDIR conflicts across casks by [@​kronikpillow](https://github.com/kronikpillow) in [#701](https://github.com/ublue-os/homebrew-experimental-tap/pull/701)
+- use homebrew actions releases not main by [@​inffy](https://github.com/inffy) in [#679](https://github.com/ublue-os/homebrew-experimental-tap/pull/679)
+- fix: fix cask checks by [@​inffy](https://github.com/inffy) in [#656](https://github.com/ublue-os/homebrew-experimental-tap/pull/656)
+- feat(formula): add bluefin-contributor-tools by [@​castrojo](https://github.com/castrojo) in [#650](https://github.com/ublue-os/homebrew-experimental-tap/pull/650)
+- Rename 2026-12-30-brazilian-bluefin.md to 2026-09-30-brazilian-bluefi… by [@​castrojo](https://github.com/castrojo) in [#1442](https://github.com/projectbluefin/documentation/pull/1442)
+- Publish blog post on Ubuntu's community building by [@​castrojo](https://github.com/castrojo) in [#1440](https://github.com/projectbluefin/documentation/pull/1440)
+- feat(blog): draft post for How We Built Ubuntu's 65M+ Community by [@​castrojo](https://github.com/castrojo) in [#1439](https://github.com/projectbluefin/documentation/pull/1439)
+- Add brazilian-bluefins blog post by [@​delphicmelody](https://github.com/delphicmelody) in [#1428](https://github.com/projectbluefin/documentation/pull/1428)
+- chore(deps): clear high npm audit advisories without a Docusaurus major by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1373](https://github.com/projectbluefin/documentation/pull/1373)
+- perf(ci): build locales in parallel shards so build time stays flat by [@​castrojo](https://github.com/castrojo) in [#1420](https://github.com/projectbluefin/documentation/pull/1420)
+- fix(i18n): correct Indonesian translation details by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1422](https://github.com/projectbluefin/documentation/pull/1422)
+- docs(i18n): translate installation, mission, values, command-line into Czech by [@​Danathar](https://github.com/Danathar) in [#1423](https://github.com/projectbluefin/documentation/pull/1423)
+- fix(i18n): correct ExtensionManager Flathub link casing across 5 locales by [@​castrojo](https://github.com/castrojo) in [#1424](https://github.com/projectbluefin/documentation/pull/1424)
+- i18n(de): translate index.md and UI strings for German by [@​castrojo](https://github.com/castrojo) in [#1421](https://github.com/projectbluefin/documentation/pull/1421)
+- i18n(sv): translate index.md and UI strings for Swedish by [@​kylerankin](https://github.com/kylerankin) in [#1409](https://github.com/projectbluefin/documentation/pull/1409)
+- feat(i18n): translate docs: Indonesian (id) by [@​kylerankin](https://github.com/kylerankin) in [#1413](https://github.com/projectbluefin/documentation/pull/1413)
+- feat(i18n): translate core docs and UI strings into Vietnamese (vi) by [@​kylerankin](https://github.com/kylerankin) in [#1405](https://github.com/projectbluefin/documentation/pull/1405)
+- docs: translate index.md and UI strings to Spanish by [@​kylerankin](https://github.com/kylerankin) in [#1414](https://github.com/projectbluefin/documentation/pull/1414)
+- i18n(uk): translate index.md and UI strings for Ukrainian by [@​kylerankin](https://github.com/kylerankin) in [#1416](https://github.com/projectbluefin/documentation/pull/1416)
+- i18n(ko): translate index.md and UI strings for Korean by [@​dtg01100](https://github.com/dtg01100) in [#1418](https://github.com/projectbluefin/documentation/pull/1418)
+- docs(analytics): describe the daily projectbluefin-countme ping by [@​castrojo](https://github.com/castrojo) in [#1355](https://github.com/projectbluefin/documentation/pull/1355)
+- fix: give Utah a real tag series in the update-churn pipeline by [@​dtg01100](https://github.com/dtg01100) in [#1419](https://github.com/projectbluefin/documentation/pull/1419)
+- docs: add Czech (cs) i18n translations by [@​castrojo](https://github.com/castrojo) in [#1408](https://github.com/projectbluefin/documentation/pull/1408)
+- i18n(fr): translate index.md and UI strings for French by [@​castrojo](https://github.com/castrojo) in [#1415](https://github.com/projectbluefin/documentation/pull/1415)
+- perf(ci): cut pages.yml build time — parallel fetch-data, verify job, leaner caches by [@​castrojo](https://github.com/castrojo) in [#1411](https://github.com/projectbluefin/documentation/pull/1411)
+- i18n(hi): translate index.md and UI strings for Hindi by [@​dtg01100](https://github.com/dtg01100) in [#1410](https://github.com/projectbluefin/documentation/pull/1410)
+- i18n(tr): translate index.md and UI strings for Turkish by [@​dtg01100](https://github.com/dtg01100) in [#1407](https://github.com/projectbluefin/documentation/pull/1407)
+- i18n(ar): translate index.md and UI strings for Arabic by [@​dtg01100](https://github.com/dtg01100) in [#1406](https://github.com/projectbluefin/documentation/pull/1406)
+- docs: translate docs into Chinese (Traditional) (zh-Hant) by [@​castrojo](https://github.com/castrojo) in [#1401](https://github.com/projectbluefin/documentation/pull/1401)
+- docs: add Chinese (Simplified) zh-Hans docs translation by [@​kylerankin](https://github.com/kylerankin) in [#1404](https://github.com/projectbluefin/documentation/pull/1404)
+- i18n(pl): translate index.md and UI strings for Polish by [@​kylerankin](https://github.com/kylerankin) in [#1402](https://github.com/projectbluefin/documentation/pull/1402)
+- Add download section to Utah documentation by [@​castrojo](https://github.com/castrojo) in [#1403](https://github.com/projectbluefin/documentation/pull/1403)
+- fix(i18n): close review gaps in translated builds by [@​castrojo](https://github.com/castrojo) in [#1400](https://github.com/projectbluefin/documentation/pull/1400)
+- docs(skills): add countme reporting diagnosis procedure by [@​castrojo](https://github.com/castrojo) in [#1354](https://github.com/projectbluefin/documentation/pull/1354)
+- feat(i18n): open 20 locales for PR-based docs translation by [@​castrojo](https://github.com/castrojo) in [#1379](https://github.com/projectbluefin/documentation/pull/1379)
+- Change header style in blog post by [@​castrojo](https://github.com/castrojo) in [#1378](https://github.com/projectbluefin/documentation/pull/1378)
+- Update blog on Bluefin development insights by [@​castrojo](https://github.com/castrojo) in [#1377](https://github.com/projectbluefin/documentation/pull/1377)
+- Add section on project visualization with gource by [@​castrojo](https://github.com/castrojo) in [#1376](https://github.com/projectbluefin/documentation/pull/1376)
+- Revise Bluefin development visualization blog post by [@​castrojo](https://github.com/castrojo) in [#1375](https://github.com/projectbluefin/documentation/pull/1375)
+- feat: Bluefin development visualized blog post by [@​castrojo](https://github.com/castrojo) in [#1374](https://github.com/projectbluefin/documentation/pull/1374)
+- fix(docs): point the Dakota page's Bluefin Classic link at /classic by [@​castrojo](https://github.com/castrojo) in [#1369](https://github.com/projectbluefin/documentation/pull/1369)
+- fix(driver-versions): order tabs Bluefin, Server, Classic, Utah by [@​castrojo](https://github.com/castrojo) in [#1368](https://github.com/projectbluefin/documentation/pull/1368)
+- Update Dakota alpha information and add Bluefin Classic note by [@​castrojo](https://github.com/castrojo) in [#1367](https://github.com/projectbluefin/documentation/pull/1367)
+- Revise Dakota description and alpha status by [@​castrojo](https://github.com/castrojo) in [#1366](https://github.com/projectbluefin/documentation/pull/1366)
+- Revise Bluefin Classic documentation by [@​castrojo](https://github.com/castrojo) in [#1365](https://github.com/projectbluefin/documentation/pull/1365)
+- fix(images): name the catalog cards Bluefin and Bluefin Classic by [@​castrojo](https://github.com/castrojo) in [#1364](https://github.com/projectbluefin/documentation/pull/1364)
+- feat(docs): order the Images catalog Bluefin, Classic, Utah by [@​castrojo](https://github.com/castrojo) in [#1363](https://github.com/projectbluefin/documentation/pull/1363)
+- feat(docs): order Images sidebar and add the Classic legacy ISOs by [@​castrojo](https://github.com/castrojo) in [#1362](https://github.com/projectbluefin/documentation/pull/1362)
+- feat(docs): remove Bluefin LTS and GDX from the site by [@​castrojo](https://github.com/castrojo) in [#1361](https://github.com/projectbluefin/documentation/pull/1361)
+- Rename Dakota to Bluefin and update content by [@​castrojo](https://github.com/castrojo) in [#1360](https://github.com/projectbluefin/documentation/pull/1360)
+- Revise Utah documentation for alpha status by [@​castrojo](https://github.com/castrojo) in [#1359](https://github.com/projectbluefin/documentation/pull/1359)
+- Update warning message for legacy ISOs by [@​castrojo](https://github.com/castrojo) in [#1358](https://github.com/projectbluefin/documentation/pull/1358)
+- Modify sidebar items and remove Donations category by [@​castrojo](https://github.com/castrojo) in [#1357](https://github.com/projectbluefin/documentation/pull/1357)
+- Update Docusaurus config for Bluefin documentation by [@​castrojo](https://github.com/castrojo) in [#1356](https://github.com/projectbluefin/documentation/pull/1356)
+- feat(analytics): read the Bluefin card from daily pings too by [@​castrojo](https://github.com/castrojo) in [#1350](https://github.com/projectbluefin/documentation/pull/1350)
+- feat(analytics): add a Bluefin Utah chart between Bluefin and Bluefin Classic by [@​castrojo](https://github.com/castrojo) in [#1349](https://github.com/projectbluefin/documentation/pull/1349)
+- docs(ai): replace ramalama with llmman by [@​castrojo](https://github.com/castrojo) in [#1348](https://github.com/projectbluefin/documentation/pull/1348)
+- refactor(countme): cut /v1 to a daily ping counted per image by [@​castrojo](https://github.com/castrojo) in [#1347](https://github.com/projectbluefin/documentation/pull/1347)
+- feat(countme): allowlist Bluefin image names and split daily counts per image by [@​castrojo](https://github.com/castrojo) in [#1346](https://github.com/projectbluefin/documentation/pull/1346)
+- fix(countme): create eos tables in the Worker, drop the migration step by [@​castrojo](https://github.com/castrojo) in [#1345](https://github.com/projectbluefin/documentation/pull/1345)
+- feat(countme): receive eos-phone-home pings in the canonical Worker by [@​castrojo](https://github.com/castrojo) in [#1344](https://github.com/projectbluefin/documentation/pull/1344)
+- feat(countme): chart Bluefin stable and testing check-ins by [@​castrojo](https://github.com/castrojo) in [#1343](https://github.com/projectbluefin/documentation/pull/1343)
+- feat(portal): source PortalNews from local blog index and align unavailable state by [@​repires](https://github.com/repires) in [#1340](https://github.com/projectbluefin/documentation/pull/1340)
+- fix(countme): preserve raw pings outside published Dakota series by [@​castrojo](https://github.com/castrojo) in [#1342](https://github.com/projectbluefin/documentation/pull/1342)
+- fix(countme): acknowledge Dakota reports after storage by [@​castrojo](https://github.com/castrojo) in [#1339](https://github.com/projectbluefin/documentation/pull/1339)
+- feat(leaderboards): render Recent Milestones as horizontal scroller below Community Builders by [@​castrojo](https://github.com/castrojo) in [#1337](https://github.com/projectbluefin/documentation/pull/1337)
+- feat(images): rework catalog for Bluefin Classic at ublue-os, Dakota, and Utah by [@​castrojo](https://github.com/castrojo) in [#1335](https://github.com/projectbluefin/documentation/pull/1335)
+- feat(leaderboards): add Recent Milestones leaderboard as a ledger of teamwork by [@​castrojo](https://github.com/castrojo) in [#1336](https://github.com/projectbluefin/documentation/pull/1336)
+- fix(deps): npm audit fix — resolve image-size, lodash-es, qs advisories (package-lock.json) by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1293](https://github.com/projectbluefin/documentation/pull/1293)
+- feat(leaderboards): add GNOME seasons and modern standings by [@​castrojo](https://github.com/castrojo) in [#1333](https://github.com/projectbluefin/documentation/pull/1333)
+- feat(knowledge-mcp): search citations and repo filter, get_repo_conventions, in-flight work queue by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1317](https://github.com/projectbluefin/documentation/pull/1317)
+- refactor: route remaining hand-rolled GitHub auth sites through shared clients by [@​sramkrishna](https://github.com/sramkrishna) in [#1327](https://github.com/projectbluefin/documentation/pull/1327)
+- fix(registry): support REGISTRY_CACHE_HOURS=0 to keep live task data fresh on deploy by [@​castrojo](https://github.com/castrojo) in [#1332](https://github.com/projectbluefin/documentation/pull/1332)
+- fix(ci): allow manual force refresh on update-hive-cache workflow by [@​castrojo](https://github.com/castrojo) in [#1331](https://github.com/projectbluefin/documentation/pull/1331)
+- fix(leaderboard): restore freshness and accurate contributor ranking by [@​castrojo](https://github.com/castrojo) in [#1330](https://github.com/projectbluefin/documentation/pull/1330)
+- fix: typo in contributors name by [@​ahmedadan](https://github.com/ahmedadan) in [#1329](https://github.com/projectbluefin/documentation/pull/1329)
+- refactor: route sbom GHCR token reads through shared githubToken by [@​mendezr](https://github.com/mendezr) in [#1315](https://github.com/projectbluefin/documentation/pull/1315)
+- fix(branding): make the monthly social preview card actually rotate by [@​Danathar](https://github.com/Danathar) in [#1313](https://github.com/projectbluefin/documentation/pull/1313)
+- docs: record the green-skip signature for a missing BLUEFIN_DISCUSSIONS_TOKEN by [@​Danathar](https://github.com/Danathar) in [#1299](https://github.com/projectbluefin/documentation/pull/1299)
+- Fix link text for latest Dakota daily snapshot by [@​castrojo](https://github.com/castrojo) in [#1325](https://github.com/projectbluefin/documentation/pull/1325)
+- refactor(fetch-data): propagate fetch script exit codes via scripts/run-parallel.mjs by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1300](https://github.com/projectbluefin/documentation/pull/1300)
+- test(knowledge-mcp): executed coverage for scripts/build-index.mjs — workers/knowledge-mcp/scripts/build-index-cli.test.mjs by [@​hivecommons-hive](https://github.com/hivecommons-hive) in [#1312](https://github.com/projectbluefin/documentation/pull/1312)
+- Embed YouTube video and update GNOME release note by [@​castrojo](https://github.com/castrojo) in [#1326](https://github.com/projectbluefin/documentation/pull/1326)
+- fix(blog): use plain anchor for full resolution link in ImageCarousel by [@​castrojo](https://github.com/castrojo) in [#1323](https://github.com/projectbluefin/documentation/pull/1323)
+- Revise bug reporting link and add lore content by [@​castrojo](https://github.com/castrojo) in [#1322](https://github.com/projectbluefin/documentation/pull/1322)
+- fix(e2e): deliver the kickstart through an initramfs overlay by [@​Danathar](https://github.com/Danathar) in [#74](https://github.com/projectbluefin/iso/pull/74)
+- fix(ci): restore ISO rename output and soft-fail arm64 legs by [@​hanthor](https://github.com/hanthor) in [#70](https://github.com/projectbluefin/iso/pull/70)
+- chore(deps): update common: v2026.08-204 -> v2026.08-207 by [@​mergeraptor](https://github.com/mergeraptor) in [#1683](https://github.com/projectbluefin/dakota/pull/1683)
+- feat(bluefin): ship ChairLift's privileged helper, policy and schemas by [@​castrojo](https://github.com/castrojo) in [#1680](https://github.com/projectbluefin/dakota/pull/1680)
+- fix(next): apply Dakota fdsdk patches and mesa-extra on next by [@​ahmedadan](https://github.com/ahmedadan) in [#1700](https://github.com/projectbluefin/dakota/pull/1700)
+- fix(next): apply Dakota fdsdk patches and mesa-extra on next by [@​ahmedadan](https://github.com/ahmedadan) in [#1696](https://github.com/projectbluefin/dakota/pull/1696)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1694](https://github.com/projectbluefin/dakota/pull/1694)
+- feat(image): enable hardware video codecs for host apps by [@​ahmedadan](https://github.com/ahmedadan) in [#1687](https://github.com/projectbluefin/dakota/pull/1687)
+- fix(ghostscript): avoid CMYK crash in ROM profiles by [@​ahmedadan](https://github.com/ahmedadan) in [#1682](https://github.com/projectbluefin/dakota/pull/1682)
+- feat(image): ship nspawn for OCI-backed nspawn machines by [@​ahmedadan](https://github.com/ahmedadan) in [#1681](https://github.com/projectbluefin/dakota/pull/1681)
+- chore(deps): update common: v2026.08-163 -> v2026.08-204 by [@​mergeraptor](https://github.com/mergeraptor) in [#1671](https://github.com/projectbluefin/dakota/pull/1671)
+- chore(deps): update dash-to-dock extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1670](https://github.com/projectbluefin/dakota/pull/1670)
+- chore(deps): update taiki-e/install-action digest to 4cef141 by [@​mergeraptor](https://github.com/mergeraptor) in [#1677](https://github.com/projectbluefin/dakota/pull/1677)
+- fix(libvirt): restore PolicyKit-authorized access by [@​ahmedadan](https://github.com/ahmedadan) in [#1673](https://github.com/projectbluefin/dakota/pull/1673)
+- fix(image): make /usr/local a real link to /var/usrlocal by [@​ahmedadan](https://github.com/ahmedadan) in [#1661](https://github.com/projectbluefin/dakota/pull/1661)
+- fix(ci): require diagnostic report intake by [@​castrojo](https://github.com/castrojo) in [#1528](https://github.com/projectbluefin/dakota/pull/1528)
+- chore(deps): update gum v2.0.1 -> v2.0.2 by [@​mergeraptor](https://github.com/mergeraptor) in [#1666](https://github.com/projectbluefin/dakota/pull/1666)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1664](https://github.com/projectbluefin/dakota/pull/1664)
+- chore(deps): update common: v2026.08-137 -> v2026.08-163 by [@​mergeraptor](https://github.com/mergeraptor) in [#1665](https://github.com/projectbluefin/dakota/pull/1665)
+- feat(bluefin): add user-configured IBus Rime with Lua support by [@​KOTONEX](https://github.com/KOTONEX) in [#1662](https://github.com/projectbluefin/dakota/pull/1662)
+- revert(countme): restore pre-session common pin (#1649, #1656) by [@​castrojo](https://github.com/castrojo) in [#1657](https://github.com/projectbluefin/dakota/pull/1657)
+- fix(countme): pin shared weekly reporter by [@​castrojo](https://github.com/castrojo) in [#1656](https://github.com/projectbluefin/dakota/pull/1656)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1655](https://github.com/projectbluefin/dakota/pull/1655)
+- chore(deps): update gsconnect extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1653](https://github.com/projectbluefin/dakota/pull/1653)
+- fix(image): vendor libvirt and make shadowed packages actually ship by [@​ahmedadan](https://github.com/ahmedadan) in [#1651](https://github.com/projectbluefin/dakota/pull/1651)
+- fix(countme): ship shared Dakota reporter by [@​castrojo](https://github.com/castrojo) in [#1649](https://github.com/projectbluefin/dakota/pull/1649)
+- chore(deps): update common: v2026.08-120 -> v2026.08-137 by [@​mergeraptor](https://github.com/mergeraptor) in [#1644](https://github.com/projectbluefin/dakota/pull/1644)
+- chore(deps): update bootc: v1.16.13-0 -> v1.16.14-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1645](https://github.com/projectbluefin/dakota/pull/1645)
+- chore(deps): update dash-to-dock extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1643](https://github.com/projectbluefin/dakota/pull/1643)
+- chore(deps): update taiki-e/install-action digest to 7623a79 by [@​mergeraptor](https://github.com/mergeraptor) in [#1646](https://github.com/projectbluefin/dakota/pull/1646)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1639](https://github.com/projectbluefin/dakota/pull/1639)
+- chore(deps): update app-indicators extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1638](https://github.com/projectbluefin/dakota/pull/1638)
+- chore(deps): update common: v2026.08-112 -> v2026.08-120 by [@​mergeraptor](https://github.com/mergeraptor) in [#1633](https://github.com/projectbluefin/dakota/pull/1633)
+- chore(deps): update nautilus-python: 4.1.0-12 -> 4.2.0-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1632](https://github.com/projectbluefin/dakota/pull/1632)
+- chore(deps): update dash-to-dock extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1631](https://github.com/projectbluefin/dakota/pull/1631)
+- feat(countme): remove local countme client and units by [@​castrojo](https://github.com/castrojo) in [#1622](https://github.com/projectbluefin/dakota/pull/1622)
+- chore(deps): update dependency ubuntu to v26 by [@​mergeraptor](https://github.com/mergeraptor) in [#1592](https://github.com/projectbluefin/dakota/pull/1592)
+- chore(deps): update taiki-e/install-action digest to dfae9bf by [@​mergeraptor](https://github.com/mergeraptor) in [#1640](https://github.com/projectbluefin/dakota/pull/1640)
+- ci(release): require explicit stable promotion by [@​ahmedadan](https://github.com/ahmedadan) in [#1637](https://github.com/projectbluefin/dakota/pull/1637)
+- fix(gnome-shell): use portable unzip flags for extension installs by [@​ahmedadan](https://github.com/ahmedadan) in [#1628](https://github.com/projectbluefin/dakota/pull/1628)
+- fix(virtualization): prevent default NAT firewall failures by [@​ahmedadan](https://github.com/ahmedadan) in [#1625](https://github.com/projectbluefin/dakota/pull/1625)
+- fix(ujust): drop flatpak -y so polkit can prompt by [@​ahmedadan](https://github.com/ahmedadan) in [#1630](https://github.com/projectbluefin/dakota/pull/1630)
+- fix(bluefin): stop GDM fingerprint retry loop on unenrolled readers by [@​ahmedadan](https://github.com/ahmedadan) in [#1627](https://github.com/projectbluefin/dakota/pull/1627)
+- chore(deps): update taiki-e/install-action digest to 94c31af by [@​mergeraptor](https://github.com/mergeraptor) in [#1620](https://github.com/projectbluefin/dakota/pull/1620)
+- chore(deps): update nautilus-python: 4.1.0-4 -> 4.1.0-12 by [@​mergeraptor](https://github.com/mergeraptor) in [#1619](https://github.com/projectbluefin/dakota/pull/1619)
+- ci: gate merges on the PR build when a PR is labeled build by [@​ahmedadan](https://github.com/ahmedadan) in [#1618](https://github.com/projectbluefin/dakota/pull/1618)
+- fix(kernel): carry hid-asus build fix for OGC 7.2.6-ogc1 by [@​ahmedadan](https://github.com/ahmedadan) in [#1617](https://github.com/projectbluefin/dakota/pull/1617)
+- fix(kernel): carry hid-asus build fix for OGC 7.2.6-ogc1 on next by [@​ahmedadan](https://github.com/ahmedadan) in [#1616](https://github.com/projectbluefin/dakota/pull/1616)
+- chore(kernel): bump OGC gaming kernel to 7.2.6-ogc1 on testing by [@​ahmedadan](https://github.com/ahmedadan) in [#1613](https://github.com/projectbluefin/dakota/pull/1613)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1615](https://github.com/projectbluefin/dakota/pull/1615)
+- chore(kernel): bump next to 7.3-rc3 and OGC 7.2.6-ogc1 by [@​ahmedadan](https://github.com/ahmedadan) in [#1612](https://github.com/projectbluefin/dakota/pull/1612)
+- ci: label-gated PR builds and SBOM job repair by [@​ahmedadan](https://github.com/ahmedadan) in [#1610](https://github.com/projectbluefin/dakota/pull/1610)
+- fix(ci): smoke-test the image Publish built, not the default-branch tip by [@​Danathar](https://github.com/Danathar) in [#1605](https://github.com/projectbluefin/dakota/pull/1605)
+- fix(ci): pin cosign to a digest-pinned installer instead of releases/latest by [@​Danathar](https://github.com/Danathar) in [#1606](https://github.com/projectbluefin/dakota/pull/1606)
+- chore(just): drop the monitor-pipeline recipe whose script no longer exists by [@​Danathar](https://github.com/Danathar) in [#1607](https://github.com/projectbluefin/dakota/pull/1607)
+- chore(deps): update common: v2026.08-107 -> v2026.08-112 by [@​mergeraptor](https://github.com/mergeraptor) in [#1581](https://github.com/projectbluefin/dakota/pull/1581)
+- feat(ghostty): disable resize overlay by default to prevent Wayland loop by [@​castrojo](https://github.com/castrojo) in [#1571](https://github.com/projectbluefin/dakota/pull/1571)
+- chore(deps): update uutils-coreutils: 0.11.0-0 -> 0.12.0-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1582](https://github.com/projectbluefin/dakota/pull/1582)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1602](https://github.com/projectbluefin/dakota/pull/1602)
+- chore(deps): update nautilus-python: 4.1.0-0 -> 4.1.0-4 by [@​mergeraptor](https://github.com/mergeraptor) in [#1603](https://github.com/projectbluefin/dakota/pull/1603)
+- chore(deps): update taiki-e/install-action digest to 9114bf4 by [@​mergeraptor](https://github.com/mergeraptor) in [#1601](https://github.com/projectbluefin/dakota/pull/1601)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1594](https://github.com/projectbluefin/dakota/pull/1594)
+- fix(kernel): restore desktop capabilities across streams by [@​ahmedadan](https://github.com/ahmedadan) in [#1598](https://github.com/projectbluefin/dakota/pull/1598)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1596](https://github.com/projectbluefin/dakota/pull/1596)
+- ci(next): empty NEXT_MERGED and track GBM master by [@​ahmedadan](https://github.com/ahmedadan) in [#1590](https://github.com/projectbluefin/dakota/pull/1590)
+- chore(next): track gnome-build-meta master by [@​ahmedadan](https://github.com/ahmedadan) in [#1589](https://github.com/projectbluefin/dakota/pull/1589)
+- feat: NVIDIA 615.71.09 and freedesktop-sdk 26.08.1 on testing by [@​ahmedadan](https://github.com/ahmedadan) in [#1588](https://github.com/projectbluefin/dakota/pull/1588)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1586](https://github.com/projectbluefin/dakota/pull/1586)
+- chore(deps): update taiki-e/install-action digest to 76c2e64 by [@​mergeraptor](https://github.com/mergeraptor) in [#1584](https://github.com/projectbluefin/dakota/pull/1584)
+- chore(deps): update bootc: v1.16.12-0 -> v1.16.13-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1574](https://github.com/projectbluefin/dakota/pull/1574)
+- feat: GNOME 51 and freedesktop-sdk 26.08 on testing by [@​ahmedadan](https://github.com/ahmedadan) in [#1579](https://github.com/projectbluefin/dakota/pull/1579)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1578](https://github.com/projectbluefin/dakota/pull/1578)
+- chore(deps): update taiki-e/install-action digest to 26e9283 by [@​mergeraptor](https://github.com/mergeraptor) in [#1570](https://github.com/projectbluefin/dakota/pull/1570)
+- chore(deps): update common: v2026.08-106 -> v2026.08-107 by [@​mergeraptor](https://github.com/mergeraptor) in [#1568](https://github.com/projectbluefin/dakota/pull/1568)
+- ci(arm): pause automation until boot validation works by [@​ahmedadan](https://github.com/ahmedadan) in [#1566](https://github.com/projectbluefin/dakota/pull/1566)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1565](https://github.com/projectbluefin/dakota/pull/1565)
+- fix(chunkah): fetch remote companion data before reading by [@​ahmedadan](https://github.com/ahmedadan) in [#1564](https://github.com/projectbluefin/dakota/pull/1564)
+- feat(chunkah): generate ownership during image builds by [@​ahmedadan](https://github.com/ahmedadan) in [#1563](https://github.com/projectbluefin/dakota/pull/1563)
+- chore(deps): update common: v2026.08-105 -> v2026.08-106 by [@​mergeraptor](https://github.com/mergeraptor) in [#1562](https://github.com/projectbluefin/dakota/pull/1562)
+- chore(deps): update taiki-e/install-action digest to 3f74d7c by [@​mergeraptor](https://github.com/mergeraptor) in [#1558](https://github.com/projectbluefin/dakota/pull/1558)
+- feat(extensions): update syncthing-toggle to bluefin-bling v2 by [@​castrojo](https://github.com/castrojo) in [#1557](https://github.com/projectbluefin/dakota/pull/1557)
+- chore(deps): update taiki-e/install-action digest to 9534c84 by [@​mergeraptor](https://github.com/mergeraptor) in [#1549](https://github.com/projectbluefin/dakota/pull/1549)
+- chore(deps): update tailscale 1.102.3 -> 1.102.4 by [@​mergeraptor](https://github.com/mergeraptor) in [#1552](https://github.com/projectbluefin/dakota/pull/1552)
+- chore(deps): update common: v2026.08-99 -> v2026.08-105
+v0.12.2-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1546](https://github.com/projectbluefin/dakota/pull/1546)
+- chore(deps): update gum v2.0.0 -> v2.0.1 by [@​mergeraptor](https://github.com/mergeraptor) in [#1551](https://github.com/projectbluefin/dakota/pull/1551)
+- chore(deps): update bootc: v1.16.11-0 -> v1.16.12-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1545](https://github.com/projectbluefin/dakota/pull/1545)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1553](https://github.com/projectbluefin/dakota/pull/1553)
+- fix(ci): isolate ChairLift tests from runner defaults by [@​ahmedadan](https://github.com/ahmedadan) in [#1550](https://github.com/projectbluefin/dakota/pull/1550)
+- fix(brew): migrate ChairLift off the Frostyard tap by [@​ahmedadan](https://github.com/ahmedadan) in [#1542](https://github.com/projectbluefin/dakota/pull/1542)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1537](https://github.com/projectbluefin/dakota/pull/1537)
+- fix(desktop): avoid broken and intrusive defaults by [@​ahmedadan](https://github.com/ahmedadan) in [#1538](https://github.com/projectbluefin/dakota/pull/1538)
+- fix(next): avoid adjacent dependency sync conflict by [@​ahmedadan](https://github.com/ahmedadan) in [#1526](https://github.com/projectbluefin/dakota/pull/1526)
+- fix(skills): make factory frontmatter parseable by [@​ahmedadan](https://github.com/ahmedadan) in [#1525](https://github.com/projectbluefin/dakota/pull/1525)
+- chore(deps): update taiki-e/install-action digest to d438492 by [@​mergeraptor](https://github.com/mergeraptor) in [#1520](https://github.com/projectbluefin/dakota/pull/1520)
+- chore(deps): update common: v2026.08-80 -> v2026.08-90 by [@​mergeraptor](https://github.com/mergeraptor) in [#1517](https://github.com/projectbluefin/dakota/pull/1517)
+- fix(extensions): preserve metadata when extracting ZIPs by [@​ahmedadan](https://github.com/ahmedadan) in [#1518](https://github.com/projectbluefin/dakota/pull/1518)
+- docs(factory): audit documentation and standardize skills by [@​castrojo](https://github.com/castrojo) in [#1516](https://github.com/projectbluefin/dakota/pull/1516)
+- feat(launcher): package vicinae and bind launcher toggle to Super+Space by [@​castrojo](https://github.com/castrojo) in [#1515](https://github.com/projectbluefin/dakota/pull/1515)
+- feat(ghostty): configure dual-theme to track GNOME Dark/Light style by [@​castrojo](https://github.com/castrojo) in [#1514](https://github.com/projectbluefin/dakota/pull/1514)
+- feat(extensions): swap bluetooth-battery-meter for budslink-companion and preinstall flatpak by [@​castrojo](https://github.com/castrojo) in [#1512](https://github.com/projectbluefin/dakota/pull/1512)
+- chore(deps): update common: v2026.08-204 -> v2026.08-207 by [@​mergeraptor](https://github.com/mergeraptor) in [#1683](https://github.com/projectbluefin/dakota/pull/1683)
+- feat(bluefin): ship ChairLift's privileged helper, policy and schemas by [@​castrojo](https://github.com/castrojo) in [#1680](https://github.com/projectbluefin/dakota/pull/1680)
+- fix(next): apply Dakota fdsdk patches and mesa-extra on next by [@​ahmedadan](https://github.com/ahmedadan) in [#1700](https://github.com/projectbluefin/dakota/pull/1700)
+- fix(next): apply Dakota fdsdk patches and mesa-extra on next by [@​ahmedadan](https://github.com/ahmedadan) in [#1696](https://github.com/projectbluefin/dakota/pull/1696)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1694](https://github.com/projectbluefin/dakota/pull/1694)
+- feat(image): enable hardware video codecs for host apps by [@​ahmedadan](https://github.com/ahmedadan) in [#1687](https://github.com/projectbluefin/dakota/pull/1687)
+- fix(ghostscript): avoid CMYK crash in ROM profiles by [@​ahmedadan](https://github.com/ahmedadan) in [#1682](https://github.com/projectbluefin/dakota/pull/1682)
+- feat(image): ship nspawn for OCI-backed nspawn machines by [@​ahmedadan](https://github.com/ahmedadan) in [#1681](https://github.com/projectbluefin/dakota/pull/1681)
+- chore(deps): update common: v2026.08-163 -> v2026.08-204 by [@​mergeraptor](https://github.com/mergeraptor) in [#1671](https://github.com/projectbluefin/dakota/pull/1671)
+- chore(deps): update dash-to-dock extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1670](https://github.com/projectbluefin/dakota/pull/1670)
+- chore(deps): update taiki-e/install-action digest to 4cef141 by [@​mergeraptor](https://github.com/mergeraptor) in [#1677](https://github.com/projectbluefin/dakota/pull/1677)
+- fix(libvirt): restore PolicyKit-authorized access by [@​ahmedadan](https://github.com/ahmedadan) in [#1673](https://github.com/projectbluefin/dakota/pull/1673)
+- fix(image): make /usr/local a real link to /var/usrlocal by [@​ahmedadan](https://github.com/ahmedadan) in [#1661](https://github.com/projectbluefin/dakota/pull/1661)
+- fix(ci): require diagnostic report intake by [@​castrojo](https://github.com/castrojo) in [#1528](https://github.com/projectbluefin/dakota/pull/1528)
+- chore(deps): update gum v2.0.1 -> v2.0.2 by [@​mergeraptor](https://github.com/mergeraptor) in [#1666](https://github.com/projectbluefin/dakota/pull/1666)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1664](https://github.com/projectbluefin/dakota/pull/1664)
+- chore(deps): update common: v2026.08-137 -> v2026.08-163 by [@​mergeraptor](https://github.com/mergeraptor) in [#1665](https://github.com/projectbluefin/dakota/pull/1665)
+- feat(bluefin): add user-configured IBus Rime with Lua support by [@​KOTONEX](https://github.com/KOTONEX) in [#1662](https://github.com/projectbluefin/dakota/pull/1662)
+- revert(countme): restore pre-session common pin (#1649, #1656) by [@​castrojo](https://github.com/castrojo) in [#1657](https://github.com/projectbluefin/dakota/pull/1657)
+- fix(countme): pin shared weekly reporter by [@​castrojo](https://github.com/castrojo) in [#1656](https://github.com/projectbluefin/dakota/pull/1656)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1655](https://github.com/projectbluefin/dakota/pull/1655)
+- chore(deps): update gsconnect extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1653](https://github.com/projectbluefin/dakota/pull/1653)
+- fix(image): vendor libvirt and make shadowed packages actually ship by [@​ahmedadan](https://github.com/ahmedadan) in [#1651](https://github.com/projectbluefin/dakota/pull/1651)
+- fix(countme): ship shared Dakota reporter by [@​castrojo](https://github.com/castrojo) in [#1649](https://github.com/projectbluefin/dakota/pull/1649)
+- chore(deps): update common: v2026.08-120 -> v2026.08-137 by [@​mergeraptor](https://github.com/mergeraptor) in [#1644](https://github.com/projectbluefin/dakota/pull/1644)
+- chore(deps): update bootc: v1.16.13-0 -> v1.16.14-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1645](https://github.com/projectbluefin/dakota/pull/1645)
+- chore(deps): update dash-to-dock extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1643](https://github.com/projectbluefin/dakota/pull/1643)
+- chore(deps): update taiki-e/install-action digest to 7623a79 by [@​mergeraptor](https://github.com/mergeraptor) in [#1646](https://github.com/projectbluefin/dakota/pull/1646)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1639](https://github.com/projectbluefin/dakota/pull/1639)
+- chore(deps): update app-indicators extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1638](https://github.com/projectbluefin/dakota/pull/1638)
+- chore(deps): update common: v2026.08-112 -> v2026.08-120 by [@​mergeraptor](https://github.com/mergeraptor) in [#1633](https://github.com/projectbluefin/dakota/pull/1633)
+- chore(deps): update nautilus-python: 4.1.0-12 -> 4.2.0-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1632](https://github.com/projectbluefin/dakota/pull/1632)
+- chore(deps): update dash-to-dock extension by [@​mergeraptor](https://github.com/mergeraptor) in [#1631](https://github.com/projectbluefin/dakota/pull/1631)
+- feat(countme): remove local countme client and units by [@​castrojo](https://github.com/castrojo) in [#1622](https://github.com/projectbluefin/dakota/pull/1622)
+- chore(deps): update dependency ubuntu to v26 by [@​mergeraptor](https://github.com/mergeraptor) in [#1592](https://github.com/projectbluefin/dakota/pull/1592)
+- chore(deps): update taiki-e/install-action digest to dfae9bf by [@​mergeraptor](https://github.com/mergeraptor) in [#1640](https://github.com/projectbluefin/dakota/pull/1640)
+- ci(release): require explicit stable promotion by [@​ahmedadan](https://github.com/ahmedadan) in [#1637](https://github.com/projectbluefin/dakota/pull/1637)
+- fix(gnome-shell): use portable unzip flags for extension installs by [@​ahmedadan](https://github.com/ahmedadan) in [#1628](https://github.com/projectbluefin/dakota/pull/1628)
+- fix(virtualization): prevent default NAT firewall failures by [@​ahmedadan](https://github.com/ahmedadan) in [#1625](https://github.com/projectbluefin/dakota/pull/1625)
+- fix(ujust): drop flatpak -y so polkit can prompt by [@​ahmedadan](https://github.com/ahmedadan) in [#1630](https://github.com/projectbluefin/dakota/pull/1630)
+- fix(bluefin): stop GDM fingerprint retry loop on unenrolled readers by [@​ahmedadan](https://github.com/ahmedadan) in [#1627](https://github.com/projectbluefin/dakota/pull/1627)
+- chore(deps): update taiki-e/install-action digest to 94c31af by [@​mergeraptor](https://github.com/mergeraptor) in [#1620](https://github.com/projectbluefin/dakota/pull/1620)
+- chore(deps): update nautilus-python: 4.1.0-4 -> 4.1.0-12 by [@​mergeraptor](https://github.com/mergeraptor) in [#1619](https://github.com/projectbluefin/dakota/pull/1619)
+- ci: gate merges on the PR build when a PR is labeled build by [@​ahmedadan](https://github.com/ahmedadan) in [#1618](https://github.com/projectbluefin/dakota/pull/1618)
+- fix(kernel): carry hid-asus build fix for OGC 7.2.6-ogc1 by [@​ahmedadan](https://github.com/ahmedadan) in [#1617](https://github.com/projectbluefin/dakota/pull/1617)
+- fix(kernel): carry hid-asus build fix for OGC 7.2.6-ogc1 on next by [@​ahmedadan](https://github.com/ahmedadan) in [#1616](https://github.com/projectbluefin/dakota/pull/1616)
+- chore(kernel): bump OGC gaming kernel to 7.2.6-ogc1 on testing by [@​ahmedadan](https://github.com/ahmedadan) in [#1613](https://github.com/projectbluefin/dakota/pull/1613)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1615](https://github.com/projectbluefin/dakota/pull/1615)
+- chore(kernel): bump next to 7.3-rc3 and OGC 7.2.6-ogc1 by [@​ahmedadan](https://github.com/ahmedadan) in [#1612](https://github.com/projectbluefin/dakota/pull/1612)
+- ci: label-gated PR builds and SBOM job repair by [@​ahmedadan](https://github.com/ahmedadan) in [#1610](https://github.com/projectbluefin/dakota/pull/1610)
+- fix(ci): smoke-test the image Publish built, not the default-branch tip by [@​Danathar](https://github.com/Danathar) in [#1605](https://github.com/projectbluefin/dakota/pull/1605)
+- fix(ci): pin cosign to a digest-pinned installer instead of releases/latest by [@​Danathar](https://github.com/Danathar) in [#1606](https://github.com/projectbluefin/dakota/pull/1606)
+- chore(just): drop the monitor-pipeline recipe whose script no longer exists by [@​Danathar](https://github.com/Danathar) in [#1607](https://github.com/projectbluefin/dakota/pull/1607)
+- chore(deps): update common: v2026.08-107 -> v2026.08-112 by [@​mergeraptor](https://github.com/mergeraptor) in [#1581](https://github.com/projectbluefin/dakota/pull/1581)
+- feat(ghostty): disable resize overlay by default to prevent Wayland loop by [@​castrojo](https://github.com/castrojo) in [#1571](https://github.com/projectbluefin/dakota/pull/1571)
+- chore(deps): update uutils-coreutils: 0.11.0-0 -> 0.12.0-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1582](https://github.com/projectbluefin/dakota/pull/1582)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1602](https://github.com/projectbluefin/dakota/pull/1602)
+- chore(deps): update nautilus-python: 4.1.0-0 -> 4.1.0-4 by [@​mergeraptor](https://github.com/mergeraptor) in [#1603](https://github.com/projectbluefin/dakota/pull/1603)
+- chore(deps): update taiki-e/install-action digest to 9114bf4 by [@​mergeraptor](https://github.com/mergeraptor) in [#1601](https://github.com/projectbluefin/dakota/pull/1601)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1594](https://github.com/projectbluefin/dakota/pull/1594)
+- fix(kernel): restore desktop capabilities across streams by [@​ahmedadan](https://github.com/ahmedadan) in [#1598](https://github.com/projectbluefin/dakota/pull/1598)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1596](https://github.com/projectbluefin/dakota/pull/1596)
+- ci(next): empty NEXT_MERGED and track GBM master by [@​ahmedadan](https://github.com/ahmedadan) in [#1590](https://github.com/projectbluefin/dakota/pull/1590)
+- chore(next): track gnome-build-meta master by [@​ahmedadan](https://github.com/ahmedadan) in [#1589](https://github.com/projectbluefin/dakota/pull/1589)
+- feat: NVIDIA 615.71.09 and freedesktop-sdk 26.08.1 on testing by [@​ahmedadan](https://github.com/ahmedadan) in [#1588](https://github.com/projectbluefin/dakota/pull/1588)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1586](https://github.com/projectbluefin/dakota/pull/1586)
+- chore(deps): update taiki-e/install-action digest to 76c2e64 by [@​mergeraptor](https://github.com/mergeraptor) in [#1584](https://github.com/projectbluefin/dakota/pull/1584)
+- chore(deps): update bootc: v1.16.12-0 -> v1.16.13-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1574](https://github.com/projectbluefin/dakota/pull/1574)
+- feat: GNOME 51 and freedesktop-sdk 26.08 on testing by [@​ahmedadan](https://github.com/ahmedadan) in [#1579](https://github.com/projectbluefin/dakota/pull/1579)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1578](https://github.com/projectbluefin/dakota/pull/1578)
+- chore(deps): update taiki-e/install-action digest to 26e9283 by [@​mergeraptor](https://github.com/mergeraptor) in [#1570](https://github.com/projectbluefin/dakota/pull/1570)
+- chore(deps): update common: v2026.08-106 -> v2026.08-107 by [@​mergeraptor](https://github.com/mergeraptor) in [#1568](https://github.com/projectbluefin/dakota/pull/1568)
+- ci(arm): pause automation until boot validation works by [@​ahmedadan](https://github.com/ahmedadan) in [#1566](https://github.com/projectbluefin/dakota/pull/1566)
+- chore(deps): update core junctions (next branch) by [@​mergeraptor](https://github.com/mergeraptor) in [#1565](https://github.com/projectbluefin/dakota/pull/1565)
+- fix(chunkah): fetch remote companion data before reading by [@​ahmedadan](https://github.com/ahmedadan) in [#1564](https://github.com/projectbluefin/dakota/pull/1564)
+- feat(chunkah): generate ownership during image builds by [@​ahmedadan](https://github.com/ahmedadan) in [#1563](https://github.com/projectbluefin/dakota/pull/1563)
+- chore(deps): update common: v2026.08-105 -> v2026.08-106 by [@​mergeraptor](https://github.com/mergeraptor) in [#1562](https://github.com/projectbluefin/dakota/pull/1562)
+- chore(deps): update taiki-e/install-action digest to 3f74d7c by [@​mergeraptor](https://github.com/mergeraptor) in [#1558](https://github.com/projectbluefin/dakota/pull/1558)
+- feat(extensions): update syncthing-toggle to bluefin-bling v2 by [@​castrojo](https://github.com/castrojo) in [#1557](https://github.com/projectbluefin/dakota/pull/1557)
+- chore(deps): update taiki-e/install-action digest to 9534c84 by [@​mergeraptor](https://github.com/mergeraptor) in [#1549](https://github.com/projectbluefin/dakota/pull/1549)
+- chore(deps): update tailscale 1.102.3 -> 1.102.4 by [@​mergeraptor](https://github.com/mergeraptor) in [#1552](https://github.com/projectbluefin/dakota/pull/1552)
+- chore(deps): update common: v2026.08-99 -> v2026.08-105
+v0.12.2-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1546](https://github.com/projectbluefin/dakota/pull/1546)
+- chore(deps): update gum v2.0.0 -> v2.0.1 by [@​mergeraptor](https://github.com/mergeraptor) in [#1551](https://github.com/projectbluefin/dakota/pull/1551)
+- chore(deps): update bootc: v1.16.11-0 -> v1.16.12-0 by [@​mergeraptor](https://github.com/mergeraptor) in [#1545](https://github.com/projectbluefin/dakota/pull/1545)
+- chore(deps): update core junctions (gnome-build-meta + freedesktop-sdk) by [@​mergeraptor](https://github.com/mergeraptor) in [#1553](https://github.com/projectbluefin/dakota/pull/1553)
+- fix(ci): isolate ChairLift tests from runner defaults by [@​ahmedadan](https://github.com/ahmedadan) in [#1550](https://github.com/projectbluefin/dakota/pull/1550)
+- fix(brew): migrate ChairLift off the Frostyard tap by [@​ahmedadan](https://github.com/ahmedadan) in [#1542](https://github.com/projectbluefin/dakota/pull/1542)
+- chore(deps): update github-actions (non-major) by [@​mergeraptor](https://github.com/mergeraptor) in [#1537](https://github.com/projectbluefin/dakota/pull/1537)
+- fix(desktop): avoid broken and intrusive defaults by [@​ahmedadan](https://github.com/ahmedadan) in [#1538](https://github.com/projectbluefin/dakota/pull/1538)
+- fix(next): avoid adjacent dependency sync conflict by [@​ahmedadan](https://github.com/ahmedadan) in [#1526](https://github.com/projectbluefin/dakota/pull/1526)
+- fix(skills): make factory frontmatter parseable by [@​ahmedadan](https://github.com/ahmedadan) in [#1525](https://github.com/projectbluefin/dakota/pull/1525)
+- chore(deps): update taiki-e/install-action digest to d438492 by [@​mergeraptor](https://github.com/mergeraptor) in [#1520](https://github.com/projectbluefin/dakota/pull/1520)
+- chore(deps): update common: v2026.08-80 -> v2026.08-90 by [@​mergeraptor](https://github.com/mergeraptor) in [#1517](https://github.com/projectbluefin/dakota/pull/1517)
+- fix(extensions): preserve metadata when extracting ZIPs by [@​ahmedadan](https://github.com/ahmedadan) in [#1518](https://github.com/projectbluefin/dakota/pull/1518)
+- docs(factory): audit documentation and standardize skills by [@​castrojo](https://github.com/castrojo) in [#1516](https://github.com/projectbluefin/dakota/pull/1516)
+- feat(launcher): package vicinae and bind launcher toggle to Super+Space by [@​castrojo](https://github.com/castrojo) in [#1515](https://github.com/projectbluefin/dakota/pull/1515)
+- feat(ghostty): configure dual-theme to track GNOME Dark/Light style by [@​castrojo](https://github.com/castrojo) in [#1514](https://github.com/projectbluefin/dakota/pull/1514)
+- feat(extensions): swap bluetooth-battery-meter for budslink-companion and preinstall flatpak by [@​castrojo](https://github.com/castrojo) in [#1512](https://github.com/projectbluefin/dakota/pull/1512)
+
+---
+
+## Bot Activity
+
+**Automation Percentage:** 39.7% (246 bot PRs out of 619 total PRs)
+
+| Repository | Bot PRs | % of Total |
+|------------|---------|------------|
+| bluefin-lts | 89 | 14.4% |
+| documentation | 8 | 1.3% |
+| bluefin | 7 | 1.1% |
+| common | 1 | 0.2% |
+
+<details>
+<summary>View bot activity details</summary>
+
+- chore(deps): update taiki-e/install-action digest to b6a061a by [@​renovate](https://github.com/renovate) in [projectbluefin/common#1260](https://github.com/projectbluefin/common/pull/1260)
+- chore(deps): update softprops/action-gh-release digest to efb3536 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4921](https://github.com/ublue-os/bluefin/pull/4921)
+- chore(deps): update ghcr.io/ublue-os/brew:latest docker digest to d52b3f5 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4908](https://github.com/ublue-os/bluefin/pull/4908)
+- chore(deps): update system_files/shared/usr/share/gnome-shell/extensions/gradia-integration@alexandervanhee.github.io digest to f70a212 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4907](https://github.com/ublue-os/bluefin/pull/4907)
+- chore(deps): update github/codeql-action digest to cdf488f by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4896](https://github.com/ublue-os/bluefin/pull/4896)
+- chore(deps): update system_files/shared/usr/share/gnome-shell/extensions/blur-my-shell@aunetx digest to b689b99 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4892](https://github.com/ublue-os/bluefin/pull/4892)
+- chore(deps): update system_files/shared/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to a7b1981 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4891](https://github.com/ublue-os/bluefin/pull/4891)
+- chore(deps): update system_files/shared/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com digest to bd6775a by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin#4890](https://github.com/ublue-os/bluefin/pull/4890)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/blur-my-shell@aunetx digest to 7dc2e59 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1939](https://github.com/ublue-os/bluefin-lts/pull/1939)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to d59fd2d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1937](https://github.com/ublue-os/bluefin-lts/pull/1937)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 8c2cb99 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1938](https://github.com/ublue-os/bluefin-lts/pull/1938)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to 6d63d8f by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1935](https://github.com/ublue-os/bluefin-lts/pull/1935)
+- chore(deps): update oras-project/setup-oras action to v2.0.2 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1934](https://github.com/ublue-os/bluefin-lts/pull/1934)
+- chore(deps): update taiki-e/install-action digest to 040e433 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1933](https://github.com/ublue-os/bluefin-lts/pull/1933)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to b71f01d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1932](https://github.com/ublue-os/bluefin-lts/pull/1932)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to b4690e4 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1931](https://github.com/ublue-os/bluefin-lts/pull/1931)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 4846ec2 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1930](https://github.com/ublue-os/bluefin-lts/pull/1930)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to f1f9f80 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1929](https://github.com/ublue-os/bluefin-lts/pull/1929)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to fcc8e3e by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1928](https://github.com/ublue-os/bluefin-lts/pull/1928)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to bef0f4d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1926](https://github.com/ublue-os/bluefin-lts/pull/1926)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 014b5ac by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1927](https://github.com/ublue-os/bluefin-lts/pull/1927)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/blur-my-shell@aunetx digest to 425761d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1925](https://github.com/ublue-os/bluefin-lts/pull/1925)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to 57cabe5 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1924](https://github.com/ublue-os/bluefin-lts/pull/1924)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 57b4cad by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1923](https://github.com/ublue-os/bluefin-lts/pull/1923)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to a37d46e by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1922](https://github.com/ublue-os/bluefin-lts/pull/1922)
+- chore(deps): update ghcr.io/ublue-os/brew:latest docker digest to bc6f5a9 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1921](https://github.com/ublue-os/bluefin-lts/pull/1921)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to 23fa15d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1920](https://github.com/ublue-os/bluefin-lts/pull/1920)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 6de966f by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1919](https://github.com/ublue-os/bluefin-lts/pull/1919)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to ab1ec89 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1918](https://github.com/ublue-os/bluefin-lts/pull/1918)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to a7ae4d3 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1917](https://github.com/ublue-os/bluefin-lts/pull/1917)
+- chore(deps): update taiki-e/install-action digest to b6a061a by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1916](https://github.com/ublue-os/bluefin-lts/pull/1916)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 4f64c7b by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1915](https://github.com/ublue-os/bluefin-lts/pull/1915)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 7fb5db6 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1914](https://github.com/ublue-os/bluefin-lts/pull/1914)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 6342969 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1913](https://github.com/ublue-os/bluefin-lts/pull/1913)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 72ce524 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1912](https://github.com/ublue-os/bluefin-lts/pull/1912)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to 0ea20bc by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1911](https://github.com/ublue-os/bluefin-lts/pull/1911)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com digest to 67741e5 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1910](https://github.com/ublue-os/bluefin-lts/pull/1910)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 6178b36 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1909](https://github.com/ublue-os/bluefin-lts/pull/1909)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 0154a8b by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1908](https://github.com/ublue-os/bluefin-lts/pull/1908)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 4603e00 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1907](https://github.com/ublue-os/bluefin-lts/pull/1907)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to 08df598 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1906](https://github.com/ublue-os/bluefin-lts/pull/1906)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to a5aaa4a by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1905](https://github.com/ublue-os/bluefin-lts/pull/1905)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 04c22f5 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1904](https://github.com/ublue-os/bluefin-lts/pull/1904)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 5727f21 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1903](https://github.com/ublue-os/bluefin-lts/pull/1903)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 457724a by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1902](https://github.com/ublue-os/bluefin-lts/pull/1902)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/gsconnect@andyholmes.github.io digest to 92c7d2b by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1901](https://github.com/ublue-os/bluefin-lts/pull/1901)
+- chore(deps): update taiki-e/install-action digest to 040dca9 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1900](https://github.com/ublue-os/bluefin-lts/pull/1900)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to fac38d1 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1899](https://github.com/ublue-os/bluefin-lts/pull/1899)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to b9066cf by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1898](https://github.com/ublue-os/bluefin-lts/pull/1898)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to 7fc7b03 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1897](https://github.com/ublue-os/bluefin-lts/pull/1897)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 83c23b0 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1896](https://github.com/ublue-os/bluefin-lts/pull/1896)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to b6bfe85 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1895](https://github.com/ublue-os/bluefin-lts/pull/1895)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/blur-my-shell@aunetx digest to f787135 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1894](https://github.com/ublue-os/bluefin-lts/pull/1894)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/gsconnect@andyholmes.github.io digest to f68c95c by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1893](https://github.com/ublue-os/bluefin-lts/pull/1893)
+- chore(deps): update taiki-e/install-action digest to cb30b4c by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1892](https://github.com/ublue-os/bluefin-lts/pull/1892)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 2c4cd89 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1891](https://github.com/ublue-os/bluefin-lts/pull/1891)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to a8e292e by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1890](https://github.com/ublue-os/bluefin-lts/pull/1890)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to cd4ab6c by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1889](https://github.com/ublue-os/bluefin-lts/pull/1889)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com digest to 54d892a by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1888](https://github.com/ublue-os/bluefin-lts/pull/1888)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 64a4d1f by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1887](https://github.com/ublue-os/bluefin-lts/pull/1887)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to 011641e by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1886](https://github.com/ublue-os/bluefin-lts/pull/1886)
+- chore(deps): update taiki-e/install-action digest to 1a85bbb by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1885](https://github.com/ublue-os/bluefin-lts/pull/1885)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 0ea4a56 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1884](https://github.com/ublue-os/bluefin-lts/pull/1884)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com digest to 52da522 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1883](https://github.com/ublue-os/bluefin-lts/pull/1883)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to 01b8db8 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1881](https://github.com/ublue-os/bluefin-lts/pull/1881)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com digest to f16ab1d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1882](https://github.com/ublue-os/bluefin-lts/pull/1882)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 36529d3 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1880](https://github.com/ublue-os/bluefin-lts/pull/1880)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 4848d24 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1879](https://github.com/ublue-os/bluefin-lts/pull/1879)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to dd64ba6 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1878](https://github.com/ublue-os/bluefin-lts/pull/1878)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 293cf0b by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1876](https://github.com/ublue-os/bluefin-lts/pull/1876)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 714ffed by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1875](https://github.com/ublue-os/bluefin-lts/pull/1875)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to eff8ca9 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1874](https://github.com/ublue-os/bluefin-lts/pull/1874)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 4d90303 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1873](https://github.com/ublue-os/bluefin-lts/pull/1873)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 5b9235e by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1872](https://github.com/ublue-os/bluefin-lts/pull/1872)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com digest to 6a7d181 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1871](https://github.com/ublue-os/bluefin-lts/pull/1871)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 6d5b38d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1870](https://github.com/ublue-os/bluefin-lts/pull/1870)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to a14aadc by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1869](https://github.com/ublue-os/bluefin-lts/pull/1869)
+- chore(deps): update taiki-e/install-action digest to 370b93f by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1868](https://github.com/ublue-os/bluefin-lts/pull/1868)
+- chore(deps): update ghcr.io/ublue-os/brew:latest docker digest to e9a7257 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1867](https://github.com/ublue-os/bluefin-lts/pull/1867)
+- chore(deps): update taiki-e/install-action digest to a6dd1c4 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1866](https://github.com/ublue-os/bluefin-lts/pull/1866)
+- chore(deps): update taiki-e/install-action digest to 30403d5 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1865](https://github.com/ublue-os/bluefin-lts/pull/1865)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to 507abcb by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1864](https://github.com/ublue-os/bluefin-lts/pull/1864)
+- chore(deps): update quay.io/centos-bootc/centos-bootc:c10s docker digest to e09c917 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1863](https://github.com/ublue-os/bluefin-lts/pull/1863)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/tmp/caffeine digest to be18b35 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1862](https://github.com/ublue-os/bluefin-lts/pull/1862)
+- chore(deps): update taiki-e/install-action digest to 6012bba by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1861](https://github.com/ublue-os/bluefin-lts/pull/1861)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to fae3e90 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1860](https://github.com/ublue-os/bluefin-lts/pull/1860)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to 1d95114 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1859](https://github.com/ublue-os/bluefin-lts/pull/1859)
+- chore(deps): update taiki-e/install-action digest to 905cb99 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1858](https://github.com/ublue-os/bluefin-lts/pull/1858)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to 3754b6d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1857](https://github.com/ublue-os/bluefin-lts/pull/1857)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to 9a8d954 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1856](https://github.com/ublue-os/bluefin-lts/pull/1856)
+- chore(deps): update ghcr.io/projectbluefin/common:latest docker digest to e5849d7 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1855](https://github.com/ublue-os/bluefin-lts/pull/1855)
+- chore(deps): update ghcr.io/ublue-os/brew:latest docker digest to 60ada2d by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1854](https://github.com/ublue-os/bluefin-lts/pull/1854)
+- chore(deps): update taiki-e/install-action digest to 3a2284f by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1853](https://github.com/ublue-os/bluefin-lts/pull/1853)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/tmp/caffeine digest to 7f5f2d3 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1852](https://github.com/ublue-os/bluefin-lts/pull/1852)
+- chore(deps): update system_files/usr/share/gnome-shell/extensions/tmp/caffeine digest to 130111c by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1851](https://github.com/ublue-os/bluefin-lts/pull/1851)
+- chore(deps): update taiki-e/install-action digest to 4e709a0 by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1850](https://github.com/ublue-os/bluefin-lts/pull/1850)
+- chore(deps): update cgr.dev/chainguard/wolfi-base:latest docker digest to 65e1acb by [@​ubot-7274](https://github.com/ubot-7274) in [ublue-os/bluefin-lts#1849](https://github.com/ublue-os/bluefin-lts/pull/1849)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1412](https://github.com/projectbluefin/documentation/pull/1412)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1371](https://github.com/projectbluefin/documentation/pull/1371)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1352](https://github.com/projectbluefin/documentation/pull/1352)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1351](https://github.com/projectbluefin/documentation/pull/1351)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1341](https://github.com/projectbluefin/documentation/pull/1341)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1334](https://github.com/projectbluefin/documentation/pull/1334)
+- chore(analytics): update release churn statistics by [@​github-actions](https://github.com/github-actions) in [projectbluefin/documentation#1324](https://github.com/projectbluefin/documentation/pull/1324)
+- chore(deps): lock file maintenance by [@​renovate](https://github.com/renovate) in [projectbluefin/documentation#1370](https://github.com/projectbluefin/documentation/pull/1370)
+
+</details>
+
+---
+
+## Build Health
+
+### Raptor Race
+
+Keep Bluefin healthy with green builds. Wranglers apply within!
+
+| Image | Success Rate | Successes | Failures | Monthly Change |
+|------|--------------|-----------|----------|----------------|
+| `bluefin:stable` | 40.9% | 36 | 52 | ![-11.1%](https://img.shields.io/badge/--11.1%25-critical?style=flat-square) |
+| `bluefin:gts` | 0% | 0 | 0 | ![+0%](https://img.shields.io/badge/%2B0%25-success?style=flat-square) |
+| `bluefin:latest` | 39.8% | 33 | 50 | ![-40.3%](https://img.shields.io/badge/--40.3%25-critical?style=flat-square) |
+| `bluefin:lts` | 1% | 4 | 388 | ![+0%](https://img.shields.io/badge/%2B0%25-success?style=flat-square) |
+| `bluefin:lts-hwe` | 1% | 4 | 388 | ![+0%](https://img.shields.io/badge/%2B0%25-success?style=flat-square) |
+| `bluefin-dx:lts` | 1% | 4 | 388 | ![+0%](https://img.shields.io/badge/%2B0%25-success?style=flat-square) |
+| `bluefin-gdx:lts` | 0% | 0 | 392 | ![+0%](https://img.shields.io/badge/%2B0%25-success?style=flat-square) |
+
+### This Month's Highlights
+
+| Metric | Value |
+|--------|-------|
+| 📊 **Total Builds** | 1739 builds across all images |
+| 🏆 **Most Active** | `bluefin:lts` (392 builds) |
+| 💯 **100% Club** | _None. Vegeta is displeased._ |
+| ⏱️ **Avg Build Time** | 76 minutes across all variants |
+
+## Contributors
+
+### New Lights
+
+We welcome our newest Guardians to the project.
+
+> "I do not know what the future holds. But I know this: with you at our side, there is nothing we cannot face."
+> 
+> —Commander Zavala
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem', marginBottom: '2rem' }}>
+
+<GitHubProfileCard username="clubanderson" highlight={true} />
+
+<GitHubProfileCard username="mendezr" highlight={true} />
+
+<GitHubProfileCard username="sramkrishna" highlight="silver" />
+
+<GitHubProfileCard username="kylerankin" highlight={true} />
+
+<GitHubProfileCard username="kronikpillow" highlight={true} />
+
+<GitHubProfileCard username="Danathar" highlight={true} />
+
+<GitHubProfileCard username="hivecommons-hive" highlight={true} />
+
+<GitHubProfileCard username="buggtb" highlight={true} />
+
+<GitHubProfileCard username="KiKaraage" highlight={true} />
+
+<GitHubProfileCard username="repires" highlight={true} />
+
+<GitHubProfileCard username="arteeh" highlight={true} />
+
+<GitHubProfileCard username="theMimolet" highlight={true} />
+
+<GitHubProfileCard username="eltorrero" highlight={true} />
+
+<GitHubProfileCard username="juanresendiz813" highlight={true} />
+
+<GitHubProfileCard username="ericcurtin" highlight={true} />
+
+<GitHubProfileCard username="ahmedadan" highlight={true} sponsorUrl="https://github.com/sponsors/ahmedadan" />
+
+<GitHubProfileCard username="inffy" highlight={true} sponsorUrl="https://github.com/sponsors/inffy" />
+
+<GitHubProfileCard username="nileshchakraborty" highlight={true} />
+
+<GitHubProfileCard username="delphicmelody" highlight={true} />
+
+<GitHubProfileCard username="dtg01100" highlight={true} />
+
+<GitHubProfileCard username="KOTONEX" highlight={true} />
+
+</div>
+
+### Wayfinders
+
+> "Define yourself by your actions."
+> 
+> —Lord Saladin
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem', marginBottom: '2rem' }}>
+
+<GitHubProfileCard username="mergeraptor" />
+
+<GitHubProfileCard username="castrojo" sponsorUrl="https://github.com/sponsors/castrojo" />
+
+<GitHubProfileCard username="renner0e" />
+
+<GitHubProfileCard username="hanthor" sponsorUrl="https://github.com/sponsors/hanthor" />
+
+</div>
+
+---
+
+*Want to see the latest OS releases? Check out the [Changelogs](/changelogs). For announcements and deep dives, read our [Blog](/blog).*
+
+*This report was automatically generated from [todo.projectbluefin.io](https://todo.projectbluefin.io).*
+
+---
+
+*Generated on 2026-10-01*  
+[View Project Board](https://todo.projectbluefin.io) | [Report an Issue](https://github.com/projectbluefin/common/issues/new)
